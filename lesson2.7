@@ -1,0 +1,26 @@
+from calculations import add,minus,multiply,div,power
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+choice = None
+while choice != 0:
+    choice = int(input("Enter your choice(0-stop program, 1-add numbers,2-minus, 3-div numbers, 4-multiply,5-power): "))
+    if choice == 1:
+        c = add(a,b)
+        print(c)
+        continue
+    if choice == 2:
+        c = minus(a,b)
+        print(c)
+        continue
+    if choice == 3:
+        c = div(a,b)
+        print(c)
+        continue
+    if choice == 4:
+        c = multiply(a,b)
+        print(c)
+        continue
+    if choice ==5:
+        c = power(a)
+        print(c)
+        continue
